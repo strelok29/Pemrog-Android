@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rifqi.finalproject.AesCipher">
+
+    <EditText
+        android:id="@+id/cipherEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/resultTextView"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/keyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cipherEditText"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cipherEditText"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Enter Key"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/resultTextView"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/encryptButton"
+        android:layout_centerHorizontal="true"
+        android:text="Decrypt" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/decryptButton"
+        android:layout_marginEnd="15dp"
+        android:text="Delete" />
+</android.widget.RelativeLayout>

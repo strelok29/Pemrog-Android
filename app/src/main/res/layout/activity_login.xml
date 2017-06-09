@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rifqi.finalproject.LoginActivity">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="Login"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="279dp"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/passEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/userEditText"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/passEditText"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:password="true"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_below="@+id/userEditText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/loginButton"
+        android:text="Exit" />
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rifqi.finalproject.CaesarCipher">
+
+    <EditText
+        android:id="@+id/cipherEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/encButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cipherEditText"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="78dp"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/decButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/encButton"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/encButton"
+        android:text="Decrypt" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/decButton"
+        android:layout_alignParentEnd="true"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/MyText"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/encButton"
+        android:hint="Result Text"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/keyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cipherEditText"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cipherEditText"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Key"
+        android:inputType="textPersonName" />
+</android.widget.RelativeLayout>
